@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header2 {
+  background-image: url(../img/design2_image1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+  border: 1px solid black;
+  height: 300px;
+  text-align: right;
+  display: block;
+}
+
+
+nav > a {
+  color:blue;
+  display: inline;
+  margin-right: 10px;
+  color:white;
+  background-color: blue;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: right;
+  box-shadow: 2px 5px 3px gray;
+}
+
+nav > #actual{
+  text-decoration: none;
+  background-color: green;
+}
+
+nav {
+  display: inline;
+  width: 100%;
+  padding-left: 10px;
+  margin-top: 30px;
+  text-align: right;
+}
+
+section {
+  width: 70%;
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.section {
+  width: 70%;
+  display: inline-block;
+  padding-top: 30px;
+}
+
+#logo {
+  display: inline;
+  margin-left: 500px;
+  text-align: right;
+}
+
+#titulo {
+  text-align: center;
+  color: black;
+  background-color: white;
+  height: 30px;
+  padding-top: 5px;
+  display: block;
+  border: 1px solid black;
+}
+
+p {
+  padding-left: 20px;
+}
+
+h4 {
+  text-decoration: italic;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+body {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#contenido {
+  display: block;
+}
+
+.diseno1 {
+  display: none;
+}
+
+h1{
+  text-align: left;
+  margin-bottom: 20px;;
+}
