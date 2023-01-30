@@ -7,12 +7,14 @@
 body {
   padding-left: 10%;
   padding-right: 10%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 h1{
   font-size: 45px;
+  font-style: italic;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   margin-top: 10px;
 }
 
@@ -129,6 +131,6 @@ p {
   margin-bottom: 30px;
 }
 
-.diseno1 {
+figure, .diseno1, #imagenaside {
   display: none;
 }
