@@ -4,16 +4,31 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 header {
   background-image: url(../img/design1_image1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
-  height: 300px;
+  height: 250px;
 }
 
-.diseno2 {
-  display: none;
+h1{
+  font-size: 45px;
+}
+
+#contenido {
+  display: inline;
+}
+
+aside{
+  width:20%;
+  display:inline;
+  vertical-align: top;
 }
 
 nav > a {
@@ -22,7 +37,7 @@ nav > a {
   margin-bottom: 40px;
 }
 
-nav > #actual{
+nav > .actual{
     text-decoration: none;
     color: black;
 }
@@ -34,10 +49,33 @@ nav {
   margin-top: 30px;
 }
 
-section {
-  width: 70%;
+#titulo {
+  text-align: center;
+  color: white;
+  background-color: black;
+  height: 40px;
+  padding-top: 5px;
+  width: 100%;
+}
+
+.logo, h3 {
   display: inline-block;
-  padding-top: 30px;
+  vertical-align: middle;
+  
+}
+
+img {
+  margin-right: 10px;
+  position: relative;
+  left: 500px;
+  bottom: 60px;
+  height: 150px;
+  width: 150px;
+}
+
+h3{
+  position: absolute;
+  font-size: 25px;
 }
 
 .section {
@@ -46,38 +84,37 @@ section {
     padding-top: 30px;
 }
 
-#logo {
-  display: inline;
-  margin-left: 500px;
-  text-align: right;
-}
-
-#titulo {
-  text-align: center;
-  color: white;
-  background-color: black;
-  height: 30px;
-  padding-top: 5px;
-  display: block;
-}
-
-p {
-  padding-left: 20px;
+article {
+  margin-bottom: 20px;
+  width: 70%;
 }
 
 h4 {
-  text-decoration: italic;
+  font-style: italic;
+  display:block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h4.about {
+  font-style:normal;
+  font-weight: bold;
+  display:block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+p {
+  text-indent: 30px;
 }
 
-article {
+#contacto > p {
   margin-bottom: 20px;
 }
 
-body {
-  padding-left: 10%;
-  padding-right: 10%;
+body{
+    padding-left: 10%;
+    padding-right: 10%
 }
 
-#contenido {
-  display: block;
+.diseno2 {
+  display: none;
 }

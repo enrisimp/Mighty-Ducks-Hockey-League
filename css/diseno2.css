@@ -54,7 +54,7 @@ section {
   padding-top: 30px;
 }
 
-#logo {
+.logo {
   display: inline;
   margin-left: 500px;
   text-align: right;
@@ -75,7 +75,7 @@ p {
 }
 
 h4 {
-  text-decoration: italic;
+  font-style: italic;
 }
 
 article {
