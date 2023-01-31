@@ -1,3 +1,4 @@
+/* ----General ------ */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,8 @@ body {
   padding-right: 10%;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
+/*----------------- Header-----------------*/
 
 h1{
   font-size: 45px;
@@ -40,8 +43,7 @@ nav > a {
   border: 1px solid black;
   text-align: right;
   box-shadow: 2px 5px 3px gray;
-  position: relative;
-  bottom: 10px;
+
 }
 
 nav > .actual{
@@ -59,46 +61,7 @@ nav > .actual{
   text-align: right;
   display: block;
 }
-
-#contenido {
-  display: inline;
-}
-
-aside{
-  width:30%;
-  display:inline;
-  vertical-align: top;
-  position:relative;
-}
-
-img {
-  margin-left: 5px;
-  margin-right: 30px;
-  height: 200px;
-  width: 200px;
-  margin-top: 50px;
-  display: inline-block;
-  position:relative;
-  bottom: 500px;
-}
-
-figure{
-  display:inline-block;
-  position:relative;
-}
-
-#imagenaside {
-  margin: 0px;
-  margin-top: 30px;
-  margin-left: auto;
-  height: 240px;
-  width: 240px;
-  display: inline;
-  position: absolute;
-  top: -250px;
-  right: 1px;   
-}
-
+/*--------------Titulo----------------*/
 #titulo {
   text-align: center;
   color: white;
@@ -114,6 +77,43 @@ h3 {
   font-size: 25px;
 }
 
+/*-----------------Contenido---------------*/
+#contenido {
+  display: inline;
+  display:flex;
+  display:flexbox;
+}
+
+/*-----------Lateral--------------*/
+aside{
+  width:30%;
+  display:inline;
+  vertical-align: top;
+}
+
+figure{
+  display:inline-block;
+}
+
+img {
+  margin-left: 5px;
+  margin-right: 30px;
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+#imagenaside {
+  margin: 0px;
+  margin-top: 30px;
+  margin-left: auto;
+  height: 240px;
+  width: 240px;
+  display: inline;
+}
+
+/*----------------Central-----------------*/
 .section {
   width: 70%;
   display: inline-block;
@@ -151,6 +151,7 @@ p {
   margin-bottom: 30px;
 }
 
+/*-----------Oculto -------------------*/
 .diseno1{
   display: none;
 }
