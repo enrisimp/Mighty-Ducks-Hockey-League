@@ -4,8 +4,6 @@
   padding: 0;
 }
 body {
-  padding-left: 10%;
-  padding-right: 10%;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   background-image: url(../img/ice.jpg);
   background-size: 100% 100%;
@@ -229,11 +227,101 @@ tr:nth-child(even) {
   color: green;
 }
 
+/* ------------- MAPAS -------- */
 #mapas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
   row-gap: 10px;
-  column-gap: 10px;
+}
+
+/* --------------FORM ---------- */
+
+fieldset {
+  padding: 10px;
+}
+
+legend {
+  font-style: italic;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 4;
+  flex-wrap: nowrap;
+}
+
+.doble {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: auto;
+  align-items:baseline;
+}
+
+.doble.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items:baseline;
+
+}
+doble>div {
+  flex: 50%;
+  box-sizing: border-box;
+}
+
+.colums {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  outline-width: 0;
+  box-shadow: none;
+  width: auto;
+  flex-grow: 1;
+}
+
+input[type="text"]:focus {
+  background: rgba(255, 255, 255, 0.299);
+  border: none;
+  border-bottom: 2px solid black;
+  outline-width: 0;
+  background-color: rgba(232, 240, 254, 0.31);
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(
+    rgba(232, 240, 254, 0.392),
+    rgba(70, 90, 126, 0.145)
+  ) !important;
+  color: fieldtext !important;
+}
+
+.firma,
+.firma > div {
+  padding: 10px 0px;
 }
