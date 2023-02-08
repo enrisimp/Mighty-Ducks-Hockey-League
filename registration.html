@@ -43,8 +43,9 @@
                 <div>
                     <form method="get" action="./show_data.html">
                         <fieldset>
+                            <legend>Personal Information</legend>
                             <div class="personal">
-                                <div class="doble">
+                                <div class="double">
                                     <div>
                                         <label for="name">Player's First Name:</label>
                                         <input type="text" name="name" id="name">
@@ -58,7 +59,7 @@
                                     <label for="street">Street Address:</label>
                                     <input type="text" name="street" id="street">
                                 </div>
-                                <div class="doble">
+                                <div class="double">
                                     <div>
                                         <label for="city">City:</label>
                                         <input type="text" name="city" id="city">
@@ -68,45 +69,55 @@
                                         <input type="text" name="zip" id="zip">
                                     </div>
                                 </div>
-                                <div class="doble">
+                                <div class="double">
                                     <div>
                                         <label for="birth">Birth Date(mm/dd/yyyy):</label>
-                                        <input type="date" name="birth" id="birth">
+                                        <input type="text" name="birth" id="birth">
                                     </div>
-                                    <div class="row">
-                                        Gender:
+                                    <!-- <div id="gender">
+                                        <div><p>Gender:</p></div>
+                                        <div>
                                             <label for="female">Female</label>
-                                            <input type="radio" name="gender" id="female">
+                                            <input type="radio" name="gender" id="female" value="female">
+                                        </div>
+                                        <div>
                                             <label for="male">Male</label>
-                                            <input type="radio" name="gender" id="male">
-                                    </div>
+                                            <input type="radio" name="gender" id="male" value="male">
+                                        </div>
+                                    </div> -->
+
+                                    <select name="genderS">
+                                        <option value="" selected disabled>Select Gender</option>
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                    </select>
                                 </div>
 
                                 <div>
                                     <p>Grade:</p>
                                     <div class="row">
                                         <div>
-                                            <input type="radio" name="grade" id="pre-k">
+                                            <input type="radio" name="grade" id="pre-k" value="Pre-School">
                                             <label for="pre-k">Pre-School</label>
                                         </div>
                                         <div>
-                                            <input type="radio" name="grade" id="1st">
+                                            <input type="radio" name="grade" id="1st" value="1st">
                                             <label for="1st">1st</label>
                                         </div>
                                         <div>
-                                            <input type="radio" name="grade" id="2nd">
+                                            <input type="radio" name="grade" id="2nd" value="2nd">
                                             <label for="2nd">2nd</label>
                                         </div>
                                         <div>
-                                            <input type="radio" name="grade" id="3th">
+                                            <input type="radio" name="grade" id="3th" value="3th">
                                             <label for="3th">3th</label>
                                         </div>
                                         <div>
-                                            <input type="radio" name="grade" id="4th">
+                                            <input type="radio" name="grade" id="4th" value="4th">
                                             <label for="4th">4th</label>
                                         </div>
                                         <div>
-                                            <input type="radio" name="grade" id="5th">
+                                            <input type="radio" name="grade" id="5th" value="5th">
                                             <label for="5th">5th</label>
                                         </div>
                                     </div>
@@ -118,31 +129,31 @@
                             <legend>Which elementary school do you live near?</legend>
                             <h4>Closest School:</h4>
                             <div class="colums">
-                                <div>
+                                <div  class="gap">
                                     <div>
-                                        <input type="radio" name="school" id="katzenmaier">
+                                        <input type="radio" name="school" id="katzenmaier" value="AJ Katzenmaier">
                                         <label for="katzenmaier">AJ Katzenmaier</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="school" id="greenbay">
+                                        <input type="radio" name="school" id="greenbay" value="Greenbay">
                                         <label for="greenbay">Greenbay</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="school" id="yeager">
+                                        <input type="radio" name="school" id="yeager" value="Howard A Yeager">
                                         <label for="yeager">Howard A Yeager</label>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="gap">
                                     <div>
-                                        <input type="radio" name="school" id="hart">
+                                        <input type="radio" name="school" id="hart" value="Marjorie P Hart">
                                         <label for="hart">Marjorie P Hart</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="school" id="north">
+                                        <input type="radio" name="school" id="north" value="North Elementary">
                                         <label for="north">North Elementary</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="school" id="south">
+                                        <input type="radio" name="school" id="south" value="South Elementary">
                                         <label for="south">South Elementary</label>
                                     </div>
                                 </div>
@@ -153,19 +164,19 @@
                             <legend>What position(s) do you normally play? (check all that apply)</legend>
                             <div class="row">
                                 <div>
-                                    <input type="checkbox" name="position" id="foward">
+                                    <input type="checkbox" name="position" id="foward" value="foward">
                                     <label for="foward">foward</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="position" id="defense">
+                                    <input type="checkbox" name="position" id="defense" value="defense">
                                     <label for="defense">defense</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="position" id="midfield">
+                                    <input type="checkbox" name="position" id="midfield" value="midfield">
                                     <label for="midfield">midfield</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="position" id="goalkeeper">
+                                    <input type="checkbox" name="position" id="goalkeeper" value="goalkeeper">
                                     <label for="goalkeeper">goalkeeper</label>
                                 </div>
                             </div>
@@ -174,35 +185,35 @@
                         <fieldset>
                             <legend>Uniform Size:</legend>
                             <div class="colums">
-                                <div>
+                                <div class="gap">
                                     <div>
-                                        <input type="radio" name="size" id="youthS">
+                                        <input type="radio" name="size" id="youthS" value="Youth Smal">
                                         <label for="youthS">Youth Smal</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="size" id="youthM">
+                                        <input type="radio" name="size" id="youthM" value="Youth Medium">
                                         <label for="youthM">Youth Medium</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="size" id="youthL">
+                                        <input type="radio" name="size" id="youthL" value="Youth Large">
                                         <label for="youthL">Youth Large</label>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="gap">
                                     <div>
-                                        <input type="radio" name="size" id="s">
+                                        <input type="radio" name="size" id="s" value="Small">
                                         <label for="hart">Small</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="size" id="m">
+                                        <input type="radio" name="size" id="m" value="Medium">
                                         <label for="m">Medium</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="size" id="l">
+                                        <input type="radio" name="size" id="l" value="Large">
                                         <label for="l">Large</label>
                                     </div>
                                     <div>
-                                        <input type="radio" name="size" id="xl">
+                                        <input type="radio" name="size" id="xl" value="Extra-Large">
                                         <label for="xl">Extra-Large</label>
                                     </div>
                                 </div>
@@ -213,25 +224,18 @@
                             <div>
                                 <p>
                                     I, the parent or guardian of the minor registrant, agree that the registrant and I
-                                    will
-                                    abide by all the
-                                    rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of
-                                    physical injury
+                                    will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing
+                                    the possibility of physical injury
                                     associated with hockey and in consideration for the “League” accepting the
-                                    registrant
-                                    for its
-                                    hockey programs and activities, I hereby release, discharge, and/or otherwise
-                                    indemnify
-                                    MDHL,
-                                    their employees and associated personnel and volunteers,including the facilities
-                                    used
-                                    for
-                                    practices and games, against any claim by or on behalf of the registrant as a result
-                                    of
-                                    the
-                                    registrant’s participation in the programand/orbeing transported to or from MDHL
-                                    sponsored
-                                    activities,which transportation
+                                    registrant for its hockey programs and activities, I hereby release, discharge,
+                                    and/or otherwise
+                                    indemnify MDHL, their employees and associated personnel and volunteers,including
+                                    the facilities
+                                    used for practices and games, against any claim by or on behalf of the registrant as
+                                    a result
+                                    of the registrant’s participation in the programand/orbeing transported to or from
+                                    MDHL
+                                    sponsored activities,which transportation
                                 </p>
                                 <p>
                                     By signing below, I here by agree and authorize the above.In addition, by signing
@@ -247,11 +251,11 @@
                                 </div>
                                 <div>
                                     <label for="date">Date:</label>
-                                    <input type="date" name="date" id="date">
+                                    <input type="text" name="date" id="date">
                                 </div>
                             </div>
                         </fieldset>
-                        <input type="submit" value="Send">
+                        <input type="submit" value="Send" class="btn_reistr" >
                     </form>
                 </div>
             </div>
