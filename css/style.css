@@ -35,7 +35,6 @@ nav {
   flex-wrap: wrap;
 }
 nav > a {
-  color: blue;
   color: white;
   background-color: blue;
   text-decoration: none;
