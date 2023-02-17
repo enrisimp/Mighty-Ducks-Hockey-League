@@ -92,7 +92,6 @@ aside {
      */
   justify-content: center;
   padding: 10px;
-  width: fit-content;
 }
 #imagenaside {
   height: 300px;
@@ -320,7 +319,6 @@ input[type="text"]:focus {
 }
 
 input:-internal-autofill-selected {
-  appearance: menulist-button;
   background-image: none !important;
   background-color: -internal-light-dark(
     rgba(232, 240, 254, 0.392),
@@ -562,7 +560,6 @@ select {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
-    width: fit-content;
   }
   #datos > p {
     margin-bottom: 5px;
@@ -591,7 +588,6 @@ select {
   iframe {
     max-width: 100%;
     height: auto;
-    width: fit-content;
   }
 
   /* --------------FORM ---------- */
@@ -678,7 +674,6 @@ select {
   }
 
   input:-internal-autofill-selected {
-    appearance: menulist-button;
     background-image: none !important;
     background-color: -internal-light-dark(
       rgba(232, 240, 254, 0.392),
@@ -784,7 +779,7 @@ select {
   iframe {
     max-width: 100%;
     height: auto;
-    width: fit-content;
+ 
   }
 
   /* --------------FORM ---------- */
@@ -854,7 +849,6 @@ select {
   }
   /*----------------Central-----------------*/
 
-  }
   /* ---------------LISTAS-------------- */
 
   /* ------------------TABLA-------------------- */
@@ -864,9 +858,6 @@ select {
     row-gap: 15px;
   }
 
-
   /* --------------FORM ---------- */
-
-
 
 }
